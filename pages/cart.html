@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/pages/cart.css">
+    <link rel="shortcut icon" href="../images/bag-shopping-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="height: 100vh;
+            display: grid;
+            grid-template-rows: auto 1fr auto;">
+    <!-- HEADER SECTION -->
+    <header class="flex">
+        <div class="logo">
+            <a href="../index.html">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span style="font-weight: 700;">MEN</span>
+                <p>Shopping</p>
+            </a>
+        </div>
+        <div class="menu-links">
+            <a href="" style="position: relative;" class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                $0.00
+                <span class="products-cart-counter">0</span>
+            </a>
+            <a href="" class="sign-in">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                Sign in
+            </a>
+            <a href="" class="register">
+                <i class="fa-solid fa-user-plus"></i>
+                Register
+            </a>
+        </div>
+    </header>
+    <!-- HEADER SECTION #END -->
+
+    <!-- CART CONTENT SECTION -->
+    <main class="flex center-flex">
+        <div class="flex center-flex">
+            <section class="cart-p-details">
+                <article class="cart-single-product flex">
+                    <button>
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <p class="cart-product-price">$30</p>
+
+                    <div class="flex">
+                        <button class="decrease">-</button>
+                        <div class="quantity flex">3</div>
+                        <button class="increase">+</button>
+                    </div>
+
+                    <p class="cart-p-title">Product Title</p>
+
+                    <img src="../images/1.png" alt="product image" sizes="" srcset="" width="70" height="70"
+                        style="border-radius: 0.22rem;">
+                </article>
+                <article class="cart-single-product flex">
+                    <button>
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <p class="cart-product-price">$150</p>
+
+                    <div class="flex">
+                        <button class="decrease">-</button>
+                        <div class="quantity flex">3</div>
+                        <button class="increase">+</button>
+                    </div>
+
+                    <p class="cart-p-title">Product Title</p>
+
+                    <img src="../images/2.webp" alt="product image" sizes="" srcset="" width="70" height="70"
+                        style="border-radius: 0.22rem;">
+                </article>
+                <article class="cart-single-product flex">
+                    <button>
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <p class="cart-product-price">$70</p>
+
+                    <div class="flex">
+                        <button class="decrease">-</button>
+                        <div class="quantity flex">3</div>
+                        <button class="increase">+</button>
+                    </div>
+
+                    <p class="cart-p-title">Product Title</p>
+
+                    <img src="../images/3.webp" alt="product image" sizes="" srcset="" width="70" height="70"
+                        style="border-radius: 0.22rem;">
+                </article>
+            </section>
+
+        </div>
+
+        <div class="clear-cart-p flex center-flex">
+            <button>
+                <i class="fa-regular fa-trash-can"></i> Clear Cart
+            </button>
+        </div>
+        <section class="cart-summary">
+            <h1>Cart Summary</h1>
+            <div class="flex">
+                <p class="cart-subtotal">Subtotal</p>
+                <p>$250</p>
+            </div>
+            <button class="checkout-btn">CHECKOUT</button>
+        </section>
+    </main>
+    <!-- CART CONTENT SECTION #END -->
+
+
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        Designed and Developer by
+        <span>
+            Youssef Lizdihar
+        </span>
+        © 2024.
+    </footer>
+    <!-- FOOTER SECTION #END -->
+</body>
+
+</html>

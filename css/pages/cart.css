@@ -1,0 +1,149 @@
+header.flex {
+    background-color: var(--bodyFT);
+    color: var(--whiteCL);
+    padding-block: 0.7rem;
+
+    & .fa-solid {
+        color: var(--whiteCL);
+    }
+
+    & .sign-in,
+    & .register {
+        border: 1px solid var(--FThover);
+    }
+
+
+    & .cart {
+        background-color: var(--iconsCL);
+    }
+
+    /*===========================
+        LEFT SIDE (logo)
+==============================*/
+
+    & .logo {
+
+        & .fa-bag-shopping {
+            font-size: 1.5rem;
+        }
+
+        & p {
+            letter-spacing: 0.2px;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+main {
+flex-wrap: wrap;
+
+    & section.cart-p-details {
+        & article.cart-single-product {
+            padding-block: 0.2rem;
+            background-color: var(--whiteCL);
+            border-top: 2.5px solid var(--blue-btn);
+            margin-top: 1.8rem;
+            max-width: 500px;
+            width: 500px;
+            justify-content: space-between;
+            margin-inline: auto;
+            border-radius: 5px 5px 2px 2px;
+            font-weight: 500;
+            box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+                0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+                0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+            padding-inline: 1.2rem;
+
+            & .fa-xmark {
+                color: var(--noticeCL);
+            }
+
+            & button.decrease {
+                color: var(--blue-btn);
+                font-size: 1.8rem;
+                padding-right: 0.5rem;
+                margin-top: -5px;
+            }
+
+            & button.increase {
+                color: var(--blue-btn);
+                font-size: 1.4rem;
+                padding-left: 0.4rem;
+                margin-top: -5px;
+            }
+
+            & .quantity {
+                background-color: var(--blue-btn);
+                padding-inline: 0.4rem;
+                color: var(--whiteCL);
+                border-radius: 15px;
+                font-size: 0.9rem;
+            }
+
+        }
+
+
+
+    }
+
+    & .clear-cart-p {
+        margin-block: 1.5rem;
+        margin-inline: 30%;
+        & button {
+            background-color: var(--noticeCL);
+            padding-inline: 1.3rem;
+            padding-block: 0.4rem;
+            border-radius: 2px;
+            font-size: 0.8rem;
+            color: var(--whiteCL);
+            font-weight: 500;
+            box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+                0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+                0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+            & .fa-regular {
+                padding-right: 0.3rem;
+                color: var(--whiteCL);
+            }
+        }
+    }
+
+    & section.cart-summary {
+        background-color: var(--whiteCL);
+        width: 350px;
+        border-radius: 5px;
+        box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        
+
+        & h1 {
+            font-size: 1.2rem;
+            padding-block: 0.5rem;
+            padding-inline: 31%;
+            border-bottom: 2.5px solid var(--FThover);
+        }
+
+        & div.flex {
+            justify-content: space-between;
+            padding-inline: 1.5rem;
+            font-size: 0.9rem;
+            margin-block: 1rem;
+            font-weight: 500;
+        }
+
+        & button.checkout-btn {
+            background-color: var(--blue-btn);
+            width: 100%;
+            max-width: 350px;
+            padding-inline: 40%;
+            box-sizing: border-box;
+            font-size: 0.8rem;
+            font-weight: 500;
+            padding-block: 0.8rem;
+            border-radius: 0 0 5px 5px ;
+            color: var(--whiteCL);
+
+        }
+    }
+
+}

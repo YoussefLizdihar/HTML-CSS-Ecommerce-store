@@ -1,0 +1,118 @@
+/*##########################
+         GENERAL CSS
+#############################*/
+
+/*====================
+        COLORS
+=======================*/
+
+:root {
+    --bodyBG: #f6f6f6;
+    --bodyFT: rgb(38, 57, 79);
+    --btnHover: #1e334c;
+    --FThover: #dbe8f3;
+    --iconsCL: #38495d;
+    --noticeCL: rgb(240, 92, 106);
+    --whiteCL: #fffbff;
+    --blue-btn: #1d81e6;
+}
+
+body {
+    background-color: var(--bodyBG);
+    color: var(--bodyFT);
+}
+
+/*=======================
+    GENERAL STYLING
+==========================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+html {
+    font-family: system-ui, -apple-system, "Roboto", serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*==========================
+        HTML ELEMENTS
+=============================*/
+
+a,
+button {
+    all: unset;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+button:active,
+a:active {
+    scale: 0.95;
+}
+
+
+a:hover,
+button:hover {
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+main {
+    width: 80%;
+    margin-inline: auto;
+}
+
+
+
+@media (width < 990px ) {
+    main {
+        width: 100%;
+    }
+}
+/*==========================
+        MY CLASSES
+=============================*/
+
+.border {
+    border: 4px solid red;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.none {
+    display: none;
+}
+
+.center-flex {
+    align-content: center;
+    justify-content: center;
+}
+
+/*###########################*
+        SPECIFIC CSS
+*#############################*/
+
+/*===================
+        ICONS
+======================*/
+
+.fa-solid {
+    color: var(--iconsCL);
+}

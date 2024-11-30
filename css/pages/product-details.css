@@ -1,0 +1,34 @@
+header.flex {
+    background-color: var(--bodyFT);
+    color: var(--whiteCL);
+    padding-block: 0.7rem;
+
+    & .fa-solid {
+        color: var(--whiteCL);
+    }
+
+    & .sign-in,
+    & .register {
+        border: 1px solid var(--FThover);
+    }
+
+
+    & .cart {
+        background-color: var(--iconsCL);
+    }
+/*===========================
+        LEFT SIDE (logo)
+==============================*/
+
+    & .logo {
+
+        & .fa-bag-shopping {
+            font-size: 1.5rem;
+        }
+
+        & p {
+            letter-spacing: 0.2px;
+            font-size: 0.9rem;
+        }
+    }
+}

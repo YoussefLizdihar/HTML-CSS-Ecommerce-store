@@ -1,0 +1,158 @@
+header.flex {
+
+    /*======================
+        RIGHT SIDE
+=========================*/
+
+    justify-content: space-between;
+    padding-inline: 10%;
+    padding-top: 1.2rem;
+
+    & a {
+        margin-inline: 0.5rem;
+    }
+
+    & .menu-links .fa-solid {
+        margin-right: 0.3rem;
+    }
+
+    & .sign-in,
+    & .register {
+        border: 1px solid var(--bodyFT);
+        padding: 0.44rem 1rem;
+        border-radius: 50px;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+    & .sign-in:hover,
+    & .register:hover {
+        color: var(--FThover);
+        background-color: var(--btnHover);
+    }
+
+    & .sign-in:hover .fa-solid,
+    & .register:hover .fa-solid {
+        color: var(--FThover);
+    }
+
+    & .cart {
+        background-color: var(--bodyFT);
+        color: var(--FThover);
+        border-radius: 50px;
+        padding: 0.44rem 1.1rem 0.44rem 0.9rem;
+        font-size: 0.8rem;
+        border: 1px solid var(--bodyFT);
+    }
+
+    & .cart .fa-solid {
+        color: var(--FThover);
+    }
+
+    & .cart:hover {
+        border: 1px solid var(--bodyFT);
+        background-color: var(--bodyBG);
+        color: var(--bodyFT);
+    }
+
+    & .cart:hover .fa-solid {
+        color: var(--bodyFT);
+    }
+
+    & .products-cart-counter {
+        position: absolute;
+        background-color: var(--noticeCL);
+        height: 18px;
+        width: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        right: -5px;
+        top: -5px;
+        color: var(--bodyBG);
+        font-size: 0.7rem;
+        font-weight: bold;
+    }
+
+
+    /*===========================
+        LEFT SIDE (logo)
+==============================*/
+
+    & .logo {
+
+        & .fa-bag-shopping {
+            font-size: 2rem;
+        }
+
+        & p {
+            letter-spacing: 0.2px;
+        }
+    }
+
+
+
+}
+
+
+@media (width < 550px) {
+    .logo {
+        display: none;
+    }
+
+    header.flex {
+        justify-content: center;
+        padding-inline: 0;
+
+        & .menu-links {
+            display: flex;
+            align-content: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+    }
+
+
+}
+
+.top-img header.sticky {
+    background-color: var(--bodyFT);
+    color: var(--whiteCL);
+    padding-block: 0.7rem;
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    left: 0;
+
+    & .fa-solid {
+        color: var(--whiteCL);
+    }
+
+    & .sign-in,
+    & .register {
+        border: 1px solid var(--FThover);
+    }
+
+
+    & .cart {
+        background-color: var(--iconsCL);
+    }
+
+    /*===========================
+        LEFT SIDE (logo)
+==============================*/
+
+    & .logo {
+
+        & .fa-bag-shopping {
+            font-size: 1.5rem;
+        }
+
+        & p {
+            letter-spacing: 0.2px;
+            font-size: 0.9rem;
+        }
+    }
+}
