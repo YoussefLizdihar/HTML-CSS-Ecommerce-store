@@ -24,21 +24,21 @@ This project is a fully responsive shopping website template, designed and devel
 ---
 ### Folder Structure
 .
-├── index.html                    # Main HTML file
+├── index.html             # Main HTML file
 ├── css/
-│   ├── global.css                # Global styles
-│   ├── header.css                # Header-specific styles
-│   ├── footer.css                # Footer-specific styles
+│   ├── global.css         # Global styles
+│   ├── header.css         # Header-specific styles
+│   ├── footer.css         # Footer-specific styles
 │   └── pages/
-│       └── index.css             # Styles for the homepage
-│       └── cart.css              # Styles for the cart page
-│       └── product-details.css   # Styles for the product page
-├── images/                       # Image assets
+│       ├── index.css      # Styles for the homepage
+│       ├── cart.css       # Styles for the cart page
+│       └── product-details.css  # Styles for the product page
+├── images/                # Image assets
 ├── js/
-│   └── main.js                   # Main JavaScript file
+│   └── main.js            # Main JavaScript file
 └── pages/
-    └── product-details.html      # Product details page
-    └── cart.html                 # Cart page
+    ├── product-details.html  # Product details page
+    └── cart.html          # Cart page
 
 ---
 
