@@ -22,6 +22,7 @@ This project is a fully responsive shopping website template, designed and devel
 - **User Account**: Sign-in and register options.
 
 ---
+### Folder Structure
 .
 ├── index.html                    # Main HTML file
 ├── css/
